@@ -72,6 +72,18 @@ h1 {
     cursor: pointer;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #999;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* 背景を少し透過させる */
+}
+
 #retryButton:hover {
     background-color: #ff1493;
 }

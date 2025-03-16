@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#wordDisplay {
+    font-size: 32px;
+    margin: 20px;
+}
+
+#typingInput {
+    font-size: 24px;
+    padding: 5px;
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 20px;
+}

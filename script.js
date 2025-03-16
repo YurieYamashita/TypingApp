@@ -19,10 +19,19 @@ let currentWord = {};
 let score = 0;
 
 // ランダムな単語を表示
+let lastWordIndex = -1; // 直前の単語のインデックスを記録
+
 function setNewWord() {
-    currentWord = words[Math.floor(Math.random() * words.length)];
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * words.length);
+    } while (newIndex === lastWordIndex); // 直前と同じ単語を避ける
+
+    lastWordIndex = newIndex;
+    currentWord = words[newIndex];
     document.getElementById("wordDisplay").innerText = `${currentWord.word} (${currentWord.romaji})`;
 }
+
 
 // 正解メッセージの表示
 function showCorrectMessage() {
@@ -53,7 +62,8 @@ function resetGame() {
 
 // 入力チェック
 document.getElementById("typingInput").addEventListener("input", function() {
-    if (this.value.toLowerCase() === currentWord.romaji) {
+    this.value = this.value.toUpperCase(); // 入力を大文字に変換
+    if (this.value === currentWord.romaji) { 
         score++;
         document.getElementById("score").innerText = `スコア: ${score}`;
         this.value = "";

@@ -1,23 +1,73 @@
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    color: #fff;
+}
+
+.game-container {
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     font-size: 24px;
+    color: #ff69b4;
 }
 
 #wordDisplay {
     font-size: 32px;
-    margin: 20px;
+    color: #ff4081;
+    font-weight: bold;
 }
 
 #typingInput {
     font-size: 24px;
-    padding: 5px;
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    outline: none;
 }
 
 #score {
     font-size: 20px;
+    color: #ff4081;
+}
+
+#correctMessage {
+    font-size: 28px;
+    color: #ff1493;
+    font-weight: bold;
     margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#congratsMessage {
+    font-size: 32px;
+    color: #ff1493;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#retryButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#retryButton:hover {
+    background-color: #ff1493;
 }

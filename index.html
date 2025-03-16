@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タイピングゲーム</title>
+    <title>かわいいタイピングゲーム</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>タイピングゲーム</h1>
-    <p id="wordDisplay">ここに単語が表示されます</p>
-    <input type="text" id="typingInput" autofocus>
-    <p id="score">スコア: 0</p>
+    <div class="game-container">
+        <h1>🎀 かわいいタイピングゲーム 🎀</h1>
+        <p id="wordDisplay">ここに単語が表示されます</p>
+        <input type="text" id="typingInput" autofocus>
+        <p id="score">スコア: 0</p>
+        <p id="correctMessage" class="hidden">せいかい！💖</p>
+        <p id="congratsMessage" class="hidden">🎉 がんばったね♡ 🎉</p>
+        <button id="retryButton" class="hidden">もういちど</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

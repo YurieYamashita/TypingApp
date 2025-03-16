@@ -36,11 +36,17 @@ function setNewWord() {
 // 正解メッセージの表示
 function showCorrectMessage() {
     const message = document.getElementById("correctMessage");
+    message.style.display = "block"; // まずは表示
     message.style.opacity = "1";  
+
     setTimeout(() => {
-        message.style.opacity = "0";  
-    }, 4000);
+        message.style.opacity = "0";
+        setTimeout(() => {
+            message.style.display = "none"; // フェードアウト後に非表示
+        }, 500); // アニメーション後に非表示にする
+    }, 2000); // 3秒間表示
 }
+
 
 // ゲーム終了処理
 function endGame() {

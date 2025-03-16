@@ -5,14 +5,11 @@ const words = [
     { word: "ねこ", romaji: "NEKO" },
     { word: "いぬ", romaji: "INU" },
     { word: "くるま", romaji: "KURUMA" },
-    { word: "みいな", romaji: "MIINA" },
     { word: "ゆりえ", romaji: "YURIE" },
     { word: "くま", romaji: "KUMA" },
     { word: "て", romaji: "TE" },
     { word: "あし", romaji: "ASHI" },
     { word: "いす", romaji: "ISU" },
-    { word: "くにこ", romaji: "KUNIKO" },
-    { word: "よしひろ", romaji: "YOSHIHIRO" }
 ];
 
 let currentWord = {};
